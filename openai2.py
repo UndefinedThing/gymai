@@ -137,8 +137,8 @@ def recordBestBots(bestNeuralNets):
     print("\n Recording Best Bots ")
     print("---------------------")
     env.render()
-    stats = gym.wrappers.RecordEpisodeStatistics(env)
-    vid = gym.wrappers.RecordVideo(env, f"videos/{gym.__version__}")
+    gym.wrappers.RecordEpisodeStatistics(env)
+    gym.wrappers.RecordVideo(env, f"videos/{gym.__version__}")
     observation = env.reset()
     for i in range(len(bestNeuralNets)):
         totalReward = 0
@@ -183,7 +183,7 @@ def scaleArray(aVal, aMin, aMax):
 
 GAME = 'BipedalWalker-v3'
 MAX_STEPS = 1000
-MAX_GENERATIONS = 1000
+MAX_GENERATIONS = 10
 POPULATION_COUNT = 100
 MUTATION_RATE = 0.01
 env = gym.make(GAME)

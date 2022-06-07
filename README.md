@@ -15,4 +15,4 @@ je recommande fortement l'utilisation d'un environement conda. Pour en créer un
 
 - python openai2.py
 
-:warning: Le projet a 1000 géneration avec une population de 100. Celui-ci est trés long a fonctionné. Je recommande baisser le nombre de génération a 10 pour voir les premier vidéo. Une demande pour voir celle-ci est demandé dans le terminal.
+:warning: Le projet a 1000 géneration avec une population de 100. Celui-ci est trés long a fonctionné. Je recommande de baisser le nombre de génération a 10 pour voir les premiere vidéo. Une demande pour voir celle-ci est demandé dans le terminal.
